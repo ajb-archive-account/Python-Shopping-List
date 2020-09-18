@@ -10,7 +10,7 @@ from instance.config import app_config
 db = SQLAlchemy()
 
 
-def create_app():
+def create_app(config_name):
     """Wrap the creation of a new flask object and return with settings using app.config.
     Connect to the db using db.init_app(app).
     """
